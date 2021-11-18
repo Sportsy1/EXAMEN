@@ -1,0 +1,7 @@
+C:\Users\user\source\repos\EXAMENGITHUB\EXAMEN\EXAMEN\EXAMEN\bin\Debug\EXAMEN.exe.config
+C:\Users\user\source\repos\EXAMENGITHUB\EXAMEN\EXAMEN\EXAMEN\bin\Debug\EXAMEN.exe
+C:\Users\user\source\repos\EXAMENGITHUB\EXAMEN\EXAMEN\EXAMEN\bin\Debug\EXAMEN.pdb
+C:\Users\user\source\repos\EXAMENGITHUB\EXAMEN\EXAMEN\EXAMEN\obj\Debug\EXAMEN.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\EXAMENGITHUB\EXAMEN\EXAMEN\EXAMEN\obj\Debug\EXAMEN.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\EXAMENGITHUB\EXAMEN\EXAMEN\EXAMEN\obj\Debug\EXAMEN.exe
+C:\Users\user\source\repos\EXAMENGITHUB\EXAMEN\EXAMEN\EXAMEN\obj\Debug\EXAMEN.pdb

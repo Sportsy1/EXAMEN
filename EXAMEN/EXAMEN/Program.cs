@@ -15,6 +15,8 @@ namespace EXAMEN
             string destino = "";
             float pesoCarga = 0;
 
+            DESTINO[] ElDestino = new DESTINO[15];
+
             float[] totalesCarga = new float[3];
 
             int[] cantidadLanzamientos = new int[3];
@@ -28,16 +30,14 @@ namespace EXAMEN
             while (totalLanzamientos < 15)
             {
                 Console.Write("\nIngresa el destino para el lanzamiento {0} (A,E,U): ", totalLanzamientos + 1);
-                destino = Console.ReadLine().ToUpper();
+                ElDestino[totalLanzamientos].Lugar = Console.ReadLine().ToUpper();
 
-                //verificamos que el destino sea válido
-                if (destino == "A" || destino == "E" || destino == "U")
+                if (ElDestino[totalLanzamientos].Lugar == "A" || ElDestino[totalLanzamientos].Lugar == "E" || ElDestino[totalLanzamientos].Lugar == "U")
                 {
                     try
                     {
-                        //El destino es válido, leemos el valor del cargamento
                         Console.Write("Ingresa el valor del cargamento [0;10000]: ");
-                        pesoCarga = float.Parse(Console.ReadLine());
+                        ElDestino[totalLanzamientos].Peso = float.Parse(Console.ReadLine());
 
                         if (pesoCarga >= 0 && pesoCarga <= 10000)
                         {
