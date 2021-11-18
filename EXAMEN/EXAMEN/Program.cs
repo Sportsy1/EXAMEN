@@ -13,10 +13,10 @@ namespace EXAMEN
             Console.WriteLine("Prueba");
 
             int totalLanzamientos = 0;
-            string destino = "";
-            float pesoCarga = 0;
+            //string destino = "";
+            //float pesoCarga = 0;
 
-            DESTINO[] ElDestino = new DESTINO[15];
+            DESTINO ElDestino = new DESTINO();
 
             float[] totalesCarga = new float[3];
 
@@ -31,33 +31,33 @@ namespace EXAMEN
             while (totalLanzamientos < 15)
             {
                 Console.Write("\nIngresa el destino para el lanzamiento {0} (A,E,U): ", totalLanzamientos + 1);
-                ElDestino[totalLanzamientos].Lugar = Console.ReadLine().ToUpper();
+                ElDestino.Lugar = Console.ReadLine().ToUpper();
 
-                if (ElDestino[totalLanzamientos].Lugar == "A" || ElDestino[totalLanzamientos].Lugar == "E" || ElDestino[totalLanzamientos].Lugar == "U")
+                if (ElDestino.Lugar == "A" || ElDestino.Lugar == "E" || ElDestino.Lugar == "U")
                 {
                     try
                     {
                         Console.Write("Ingresa el valor del cargamento [0;10000]: ");
-                        ElDestino[totalLanzamientos].Peso = float.Parse(Console.ReadLine());
+                        ElDestino.Peso = float.Parse(Console.ReadLine());
 
-                        if (pesoCarga >= 0 && pesoCarga <= 10000)
+                        if (ElDestino.Peso >= 0 && ElDestino.Peso <= 10000)
                         {
                             //El peso de la carga está en el destino válido, procedemos a acumular en la variable respectiva
-                            switch (destino)
+                            switch (ElDestino.Lugar)
                             {
                                 case "A":
                                     cantidadLanzamientos[0]++;
-                                    totalesCarga[0] += pesoCarga;
+                                    totalesCarga[0] += ElDestino.Peso;
                                     break;
 
                                 case "E":
                                     cantidadLanzamientos[1]++;
-                                    totalesCarga[1] += pesoCarga;
+                                    totalesCarga[1] += ElDestino.Peso;
                                     break;
 
                                 case "U":
                                     cantidadLanzamientos[2]++;
-                                    totalesCarga[2] += pesoCarga;
+                                    totalesCarga[2] += ElDestino.Peso;
                                     break;
                             }
 
