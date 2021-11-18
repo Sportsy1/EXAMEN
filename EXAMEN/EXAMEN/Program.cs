@@ -15,20 +15,10 @@ namespace EXAMEN
             string destino = "";
             float pesoCarga = 0;
 
-            /*
-            Posiciones en los arreglos
-                0: Acidalia
-                1: Elysium
-                2: Utopia
-            */
-
-            //Este arreglo almacenará los totales de carga por planicie
             float[] totalesCarga = new float[3];
 
-            //Este arreglo almacenará los totales de lanzamiento por planicie
             int[] cantidadLanzamientos = new int[3];
 
-            //inicializamos los arreglos que totalizan
             for (int i = 0; i < 3; i++)
             {
                 totalesCarga[i] = 0;
@@ -113,12 +103,6 @@ namespace EXAMEN
 
         }
 
-        /// <summary>
-        /// Función que calcula el promedio de carga recibido en cada planicie segun el número de lanzamientos
-        /// </summary>
-        /// <param name="arregloLanzamientos">Total de lanzamientos por planicie</param>
-        /// <param name="arregloCargas">Total Carga recibida por planicie</param>
-        /// <returns>los promedios de carga recibidos por planicie</returns>
         static float[] CalculaPromedioEfectividad(int[] arregloLanzamientos, float[] arregloCargas)
         {
             float[] promedios = new float[3];
