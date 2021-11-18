@@ -10,6 +10,7 @@ namespace EXAMEN
             Console.WriteLine("Se realizarán 15 lanzamientos de materiales necesarios para la colonización,");
             Console.WriteLine("que estarán ubicados en las planicies(A)cidalia, (E)lysium y (U)topia.");
             Console.WriteLine("Cada lanzamiento tiene un cargamento de hasta 10.000 kg.\n");
+            Console.WriteLine("Prueba");
 
             int totalLanzamientos = 0;
             string destino = "";
